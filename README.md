@@ -22,3 +22,5 @@ Any errors during the installation are caught and displayed on the error page.
 # Overall, this script should  allow a user to easily install specific Python versions and optionally Dockize the installation to a chosen custom location through a web interface. The virtual environment keeps the installation isolated from the system Python. The code should handle the installation process end-to-end.
 
 # I welcome any suggestions or ideas to improve this script so the user gets the desired end results. Right now the script only creates three different virtual enviroments in three seeparate folders all having just a virtual enviroment with the native python on the users PC rather than any python version desired and selected from the index.html page. 
+
+# The compressed zip folder contains python scripts folder as well as native python libraries which are conponents of a typical virtual  python enviroment installation. 
