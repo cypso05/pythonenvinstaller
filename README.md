@@ -15,10 +15,10 @@ Creates a Python virtual environment in a venv subfolder using the venv module. 
 
 # - The script can not Activate the virtual environment nor upgrade pip, ( installs the native Python version on the users PC in the newly created Virtual enviroment which is not what I want to achieve).
 
-#-  If Docker installation is selected, it should generate a Dockerfile that uses the installed Python version as its base image. This Dockerfile could be used to containerize an application using the venv Python. and this part needs to be fixed as well. 
+# -  If Docker installation is selected, it should generate a Dockerfile that uses the installed Python version as its base image. This Dockerfile could be used to containerize an application using the venv Python. and this part needs to be fixed as well. 
 
 Any errors during the installation are caught and displayed on the error page.
 
-# Overall, this should  allow the user to easily install a specific Python version and optionally Dockize the installation to a chosen custom location through a web interface. The virtual environment keeps the installation isolated from the system Python. The code should handle the installation process end-to-end.
+# Overall, this script should  allow a user to easily install specific Python versions and optionally Dockize the installation to a chosen custom location through a web interface. The virtual environment keeps the installation isolated from the system Python. The code should handle the installation process end-to-end.
 
 # I welcome any suggestions or ideas to improve this script so the user gets the desired end results. Right now the script only creates three different virtual enviroments in three seeparate folders all having just a virtual enviroment with the native python on the users PC rather than any python version desired and selected from the index.html page. 
