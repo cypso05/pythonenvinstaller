@@ -13,7 +13,7 @@ Creates a Python virtual environment in a venv subfolder using the venv module. 
 
 # what the script can not do at the moment!!
 
-# - The script can not Activate the virtual environment or upgrades pip, ( installs the native Python version on the users PC in the newly created Virtual enviroment which is not what we want to achieve)  This makes that global Python version available in the venv.
+# - The script can not Activate the virtual environment nor upgrade pip, ( installs the native Python version on the users PC in the newly created Virtual enviroment which is not what we want to achieve)  This makes that global Python version available in the venv.
 
 #-  If Docker installation was selected, it should generate a Dockerfile that uses the installed Python version as its base image. This Dockerfile could be used to containerize an application using the venv Python. and this part needs to be fixed as well. 
 
