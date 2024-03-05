@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #bdd2e3; /* Light Sky Blue background */
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            max-width: 600px;
+            padding: 20px;
+            background-color: #fff; /* White background */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label, select, input {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="post" action="/">
+        <h1>Python virtual environment Installer with Docker</h1>
+        <label for="python_version">Select Python Version:</label>
+        <select name="python_version" id="python_version">
+            <option value="3.8">3.8</option>
+            <option value="3.9">3.9</option>
+            <option value="3.10">3.10</option>
+            <option value="3.11">3.11</option>
+            <option value="3.12">3.12</option>
+        </select>
+        <br>
+        <label for="drive">Select Drive:</label>
+        <select name="drive" id="drive">
+            {% for drive in drives %}
+                <option value="{{ drive }}">{{ drive }}</option>
+            {% endfor %}
+        </select>
+        <br>
+        <label for="environment">Install with Virtual Environment:</label>
+        <input type="checkbox" name="environment" id="environment">
+        <br>
+        <label for="dockize">Dockize the installation?</label>
+        <input type="checkbox" name="dockize" id="dockize">
+        <br>
+        <input type="submit" value="Install">
+    </form>
+</body>
+</html>
